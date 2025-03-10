@@ -1,0 +1,226 @@
+{
+  "documentTitle": "TodoMVC: React",
+  "pageUrl": "https://todomvc.com/examples/react/dist/#/",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1_A.G141",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "The heading structure is not logically nested. This h3 element appears to be the primary document heading, so should be an h1 element.",
+      "context": "<h3>React</h3>",
+      "selector": "html > body > aside > header > h3",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1_A.G141",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "The heading structure is not logically nested. This h3 element should be an h1 to be properly nested.",
+      "context": "<h3>React</h3>",
+      "selector": "html > body > aside > header > h3",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 3:1.",
+      "context": "<h3>React</h3>",
+      "selector": "html > body > aside > header > h3",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<span class=\"source-links\">   <h5>React</h5> <a href=\"http...</span>",
+      "selector": "html > body > aside > header > span",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1_A.G141",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "The heading structure is not logically nested. This h5 element should be an h4 to be properly nested.",
+      "context": "<h5>React</h5>",
+      "selector": "html > body > aside > header > span > h5:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<h5>React</h5>",
+      "selector": "html > body > aside > header > span > h5:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://github.com/tastejs/todomvc/tree/gh-pages/examples/react\">Source</a>",
+      "selector": "html > body > aside > header > span > a:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<h5>TypeScript + React</h5>",
+      "selector": "html > body > aside > header > span > h5:nth-child(3)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a class=\"demo-link\" data-type=\"local\" href=\"https://todomvc.com/examples/typescript-react\">Demo</a>",
+      "selector": "html > body > aside > header > span > a:nth-child(4)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://github.com/tastejs/todomvc/tree/gh-pages/examples/typescript-react\">Source</a>",
+      "selector": "html > body > aside > header > span > a:nth-child(5)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<p>React is a JavaScript library f...</p>",
+      "selector": "html > body > aside > blockquote > p",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"http://facebook.github.io/react\">React</a>",
+      "selector": "html > body > aside > blockquote > footer > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<h4>Official Resources</h4>",
+      "selector": "html > body > aside > h4:nth-child(5)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://react.dev/learn\">Quick Start</a>",
+      "selector": "html > body > aside > ul:nth-child(6) > li:nth-child(1) > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://react.dev/reference/react\">API Reference</a>",
+      "selector": "html > body > aside > ul:nth-child(6) > li:nth-child(2) > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://petehuntsposts.quora.com/React-Under-the-Hood\">Philosophy</a>",
+      "selector": "html > body > aside > ul:nth-child(6) > li:nth-child(3) > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://react.dev/community\">React Community</a>",
+      "selector": "html > body > aside > ul:nth-child(6) > li:nth-child(4) > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<h4>Community</h4>",
+      "selector": "html > body > aside > h4:nth-child(7)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://stackoverflow.com/questions/tagged/reactjs\">ReactJS on Stack Overflow</a>",
+      "selector": "html > body > aside > ul:nth-child(8) > li > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<em>If you have other helpful links...</em>",
+      "selector": "html > body > aside > footer > em",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://github.com/tastejs/todomvc/issues\">let us know</a>",
+      "selector": "html > body > aside > footer > em > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+      "context": "<label class=\"visually-hidden\" for=\"todo-input\">New Todo Input</label>",
+      "selector": "#root > header > div > label",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

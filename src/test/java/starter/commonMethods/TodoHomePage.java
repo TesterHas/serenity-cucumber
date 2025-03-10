@@ -6,6 +6,8 @@ import net.thucydides.core.pages.PageObject;
 
 @DefaultUrl("https://todomvc.com/examples/react/dist/#/")
 public class TodoHomePage extends PageObject {
+
+    public static String url = "https://todomvc.com/examples/react/dist/#/";
     public static Target INPUT_FIELD = Target.the("input field")
             .locatedBy("//input[@id='todo-input']");
 

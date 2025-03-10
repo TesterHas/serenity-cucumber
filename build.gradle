@@ -23,8 +23,8 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
 
-sourceCompatibility = 16
-targetCompatibility = 16
+sourceCompatibility = 17
+targetCompatibility = 17
 
 ext {
     serenity_version = '4.2.13'
@@ -51,6 +51,9 @@ dependencies {
         testImplementation "org.junit.vintage:junit-vintage-engine:${junit_vintage_engine_version}"
         implementation "ch.qos.logback:logback-classic:${logback_classic_version}"
         testImplementation "org.assertj:assertj-core:${assertj_core_version}"
+        // https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons
+        implementation 'io.qameta.allure:allure-java-commons:2.29.1'
+
     }
 }
 
@@ -58,9 +61,14 @@ test {
     useJUnitPlatform()
 }
 
+task runPa11y(type: Exec) {
+    commandLine 'node', 'pa11y.js'
+}
+
 serenity {
     reports = ["single-page-html"]
 }
+
 gradle.startParameter.continueOnFailure = true
 
-test.finalizedBy(aggregate, reports)
+test.finalizedBy(aggregate)
