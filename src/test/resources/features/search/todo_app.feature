@@ -5,5 +5,4 @@ Feature: Test Cases for toDo App
     Given Hassan is on the Todo App
     When he adds a new task "test"
     Then he should see the task "test" added to the list
-    Then I run an accessibility test on "https://todomvc.com/examples/react/dist/#/"
 

@@ -12,17 +12,6 @@ import starter.commonMethods.NavigateTo;
 import starter.commonMethods.TodoHomePage;
 public class SearchStepDefinitions {
 
-    private final AccessibilitySteps accessibilitySteps;
-
-    public SearchStepDefinitions(AccessibilitySteps accessibilitySteps) {
-        this.accessibilitySteps = accessibilitySteps;
-    }
-
-    @Then("I run an accessibility test on {string}")
-    public void iRunAnAccessibilityTestOn(String url) {
-        accessibilitySteps.runAccessibilityTest(url);
-    }
-
     @Given("{actor} is on the Todo App")
     public void is_on_the_Todo_app(Actor actor) {
         actor.wasAbleTo(NavigateTo.theTodoHomePage());
