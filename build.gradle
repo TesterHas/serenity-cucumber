@@ -51,9 +51,13 @@ dependencies {
         testImplementation "org.junit.vintage:junit-vintage-engine:${junit_vintage_engine_version}"
         implementation "ch.qos.logback:logback-classic:${logback_classic_version}"
         testImplementation "org.assertj:assertj-core:${assertj_core_version}"
-        // https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons
-        implementation 'io.qameta.allure:allure-java-commons:2.29.1'
-
+        // Selenium WebDriver
+        implementation 'org.seleniumhq.selenium:selenium-java:4.29.0'
+        // Axe-core and Axe-Selenium dependencies
+        implementation 'com.deque.html.axe-core:selenium:4.7.0'
+        implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.0'
+        // Apache Commons IO for file operations
+        implementation 'commons-io:commons-io:2.11.0'
     }
 }
 
@@ -61,9 +65,9 @@ test {
     useJUnitPlatform()
 }
 
-task runPa11y(type: Exec) {
-    commandLine 'node', 'pa11y.js'
-}
+// task runPa11y(type: Exec) {
+//     commandLine 'node', 'pa11y.js'
+// }
 
 serenity {
     reports = ["single-page-html"]

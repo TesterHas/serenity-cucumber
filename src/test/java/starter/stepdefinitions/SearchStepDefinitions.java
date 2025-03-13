@@ -1,13 +1,17 @@
 package starter.stepdefinitions;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.ensure.Ensure;
+import starter.commonMethods.AxeUtil;
 import starter.commonMethods.NavigateTo;
 import starter.commonMethods.TodoHomePage;
 public class SearchStepDefinitions {
@@ -22,6 +26,13 @@ public class SearchStepDefinitions {
         actor.attemptsTo(
             Enter.theValue(task).into(TodoHomePage.INPUT_FIELD).thenHit(Keys.ENTER)
         );
+    }
+
+    @Then("{actor} analyze the page for accessibility issues")
+    public void iAnalyzeThePageForAccessibilityIssues(Actor actor) {
+        // Get the WebDriver instance from the Actor
+        WebDriver driver = BrowseTheWeb.as(actor).getDriver();
+        AxeUtil.analyzeAccessibility(driver);
     }
 
     @Then("{actor} should see the task {string} added to the list")

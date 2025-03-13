@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "pa11y": "^8.0.0"
+    "pa11y": "^8.0.0",
+    "pa11y-ci": "^2.4.2"
   }
 }
