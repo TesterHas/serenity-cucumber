@@ -65,10 +65,6 @@ test {
     useJUnitPlatform()
 }
 
-// task runPa11y(type: Exec) {
-//     commandLine 'node', 'pa11y.js'
-// }
-
 serenity {
     reports = ["single-page-html"]
 }
